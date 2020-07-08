@@ -12,8 +12,11 @@ on:
   push:
     branches:
       - vnext
+    paths-ignore:
+      - 'documentation/**'
+      - '_pictures/**'
   schedule:
-    - cron:  '0 0 * * *'
+    - cron:  '0 2 * * *'
 
 env:
   TF_CLI_ARGS: '-no-color'

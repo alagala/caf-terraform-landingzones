@@ -1,4 +1,8 @@
-## v6.0.2006 (June 2020) - UNRELEASED
+## v6.0.2006 (June 2020)
+
+BREAKING CHANGES:
+
+* New launchpad. You must destroy the 2005:1510 first before redelpoying this version of the launchap. 
 
 FEATURES:
 
@@ -9,7 +13,10 @@ FEATURES:
 * **workspace:** Increased command history, tab size set to 2 and eol settings.
 * **rover :** upgrade to rover 2006 - support for Terraform 0.28 - added toolset for development and bootstrap process, decoupling launchpad and rover.
 * **added support for azurerm 2.16 :** On all sample landing zones [azurerm provider](https://github.com/terraform-providers/terraform-provider-azurerm/releases/tag/v2.16.0)
-* **documentation :** Iterating on documentation, adding clarifications on component roles, architecture and delivery techniques.
+* **documentation :** Iterating on documentation, adding clarifications on component roles, modules engineering criteria, architecture and delivery techniques.
+
+DEPRECATED:
+* launchpad command has been merged into the rover command. See getting started.
 
 ## v5.1.2005 (May 2020)
 
